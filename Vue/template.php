@@ -74,7 +74,7 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 				  <li><a href="index.php">Home</a></li>
 				  <li><a href="article.php?id=1">Livre</a></li>
 				  <li><a href="biography.php">Biographie</a></li>
-				  <li><a href="admin.php">Auteur</a></li>
+				  <li><a href="index.php?action=connexion">Admin</a></li>
 <!-- <li><a class="lien-header" href="<?="./index.php?action=contact" ?>">Contact</a></li>-->
                 <?php if (isset($_SESSION['nom']) AND isset($_SESSION['is_admin']))
                 { ?>
@@ -87,8 +87,7 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 			
 </header>	
 
-
-    <div class="container" id="bloc-principal">
+  <div class="container" id="bloc-principal">
         <?= $contenu ?>
     </div>
   </body>
