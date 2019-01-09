@@ -16,7 +16,7 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script> -->
 	<!-- <link rel="stylesheet" type="text/css" href="style/jquery.bxslider.css" /> -->
 	<!-- <script src="js/jquery.bxslider.min.js"></script><!-- Appel JS du carousel --> 
-	<script src="./carroussel.js" defer></script>
+	<script src="./Vue/js/carroussel.js" defer></script>
 
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=evmxjxgwrombaci5zg013nbupc683dugdv2rvwk9tsg2lcj2"></script>
 	  
@@ -32,12 +32,12 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 	<link rel="stylesheet" type="text/css" href="./blog.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
-	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/awesome-4.7.0/css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/awesome-4.7.0/css/font-awesome.min.css">-->
 		
 <!-- Bootstrap  -->
-	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+	<!--<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/bootstrap-theme.min.css" />-->
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -63,9 +63,9 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 <!-----SLIDER----->
 			<div id="carrousel">
 				<ul>
-					<li><img src="images/img1.jpg"/></li>
-					<li><img src="images/img2.jpg" /></li>
-					<li><img src="images/img3.jpg" /></li>
+					<li><img src="./Vue/images/img1.jpg"/></li>
+					<li><img src="./Vue/images/img2.jpg" /></li>
+					<li><img src="./Vue/images/img3.jpg" /></li>
 				</ul>
 			</div>
 <!-----FIN SLIDER----->
