@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/awesome-4.7.0/css/font-awesome.min.css">
 		
-<!-- Bootstrap  -->
+<!-- Bootstrap
 	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />-->
 		
