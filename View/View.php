@@ -1,14 +1,21 @@
 <?php
+
+//View: affiche les informations dans une page html
+
+//cette class permet de créer un objet, qui contient des variables
+//accès aux éléments privés est uniquement réservé à la classe qui les a définie
+//http://php.net/manual/fr/language.oop5.visibility.php?fbclid=IwAR3NbLa_Ae4ATjD662LsR1ueJkHKMMFgLxj0HXz1F4rJVpOKsK90n8jpnsQ
+
 class Vue {
 
   // Nom du fichier associé à la vue
-  private $fichier;
+  private $fichier; 
   // Titre de la vue (défini dans le fichier vue)
   private $titre;
 
   public function __construct($action) {
     // Détermination du nom du fichier vue à partir de l'action
-    $this->fichier = "Vue/vue" . $action . ".php";
+    $this->fichier = "View/vue" . $action . ".php";
   }
 
   // Génère et affiche la vue
@@ -16,7 +23,7 @@ class Vue {
     // Génération de la partie spécifique de la vue
     $contenu = $this->genererFichier($this->fichier, $donnees);
     // Génération du gabarit commun utilisant la partie spécifique
-    $vue = $this->genererFichier('Vue/template.php',
+    $vue = $this->genererFichier('View/template.php',
       array('titre' => $this->titre, 'contenu' => $contenu));
     // Renvoi de la vue au navigateur
     echo $vue;

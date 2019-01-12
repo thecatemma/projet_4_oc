@@ -71,8 +71,13 @@ class Article
     }
 
     public function setId($id)
+		
+		
     {
-      // On convertit l'argument en nombre entier.
+     
+	  //
+	  //Setter --> injecte valeur dans BDD
+	  // Conversion de l'argument en nombre entier.
       // Si c'en était déjà un, rien ne changera.
       // Sinon, la conversion donnera le nombre 0 (à quelques exceptions près, mais rien d'important ici).
       $id = (int) $id;

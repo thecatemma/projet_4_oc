@@ -16,7 +16,7 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script> -->
 	<!-- <link rel="stylesheet" type="text/css" href="style/jquery.bxslider.css" /> -->
 	<!-- <script src="js/jquery.bxslider.min.js"></script><!-- Appel JS du carousel --> 
-	<script src="./Vue/js/carroussel.js" defer></script>
+	<script src="./View/js/carroussel.js" defer></script>
 
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=evmxjxgwrombaci5zg013nbupc683dugdv2rvwk9tsg2lcj2"></script>
 	  
@@ -63,9 +63,9 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 <!-----SLIDER----->
 			<div id="carrousel">
 				<ul>
-					<li><img src="./Vue/images/img1.jpg"/></li>
-					<li><img src="./Vue/images/img2.jpg" /></li>
-					<li><img src="./Vue/images/img3.jpg" /></li>
+					<li><img src="./View/images/img1.jpg"/></li>
+					<li><img src="./View/images/img2.jpg" /></li>
+					<li><img src="./View/images/img3.jpg" /></li>
 				</ul>
 			</div>
 <!-----FIN SLIDER----->

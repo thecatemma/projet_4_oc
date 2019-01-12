@@ -1,7 +1,7 @@
 <?php $this->titre='Administration'; ?>
 <div class="row">
     <div class="col-md-4 col-centered">
-        <img src="Vue/images/alaska.jpg"/>
+        <img src="View/images/alaska.jpg"/>
     </div>
 </div>
 <div class="row">

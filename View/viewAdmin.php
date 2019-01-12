@@ -32,17 +32,19 @@ foreach ($listecoms as $com): ?>
   
 
   <div class="row">
-    <h2 class="col-md-4">Articles</h2>
-  </div>
+	  <div class="col-md-12"> 
+    <h2>Articles</h2>
     <?php foreach ($listebillet as $billet): ?>
-  <div class="row">
-    <article class="col-md-4">
+
       <p>
-        <?= $billet->titre(); ?>&nbsp;<a href="<?= "index.php?action=editarticle&id=".$billet->id()."&dateCreation=".$billet->dateCreation(); ?>"><button>Modifier</button></a>
+        <?= $billet->titre(); ?>&nbsp; <br>
+		 
+		<a href="<?= "index.php?action=editarticle&id=".$billet->id()."&dateCreation=".$billet->dateCreation(); ?>"><button class="bouton_admin">Modifier</button></a>
         <a href="<?= "index.php?action=deletearticle&id=".$billet->id()."&dateCreation=".$billet->dateCreation(); ?>"><button>Supprimer</button></a>
       </p>
-    </article>
-  </div>
   <hr />
+  </div>
+</div>
+	  
 <?php endforeach; ?>
 

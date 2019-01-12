@@ -7,7 +7,7 @@
 require_once 'Modele.php';
 class UtilisateurManager extends Modele
 {
-  //Fonction en construction en vue de l'implémentation d'un module d'inscription d'utilisateur et d'ajout en bdd
+  //Fonction en construction pour l'implémentation d'un module d'inscription d'utilisateur et d'ajout en bdd
   /*public function add(Utilisateur $utilisateur)
   {
     // Préparation de la requête d'insertion.
