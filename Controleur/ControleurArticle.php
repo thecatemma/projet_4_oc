@@ -21,8 +21,8 @@ class ControleurArticle
       if (!(is_null($billet)))
       {
           $commentaires = $this->_article->getCommentaires($idArticle);
-          $vue = new Vue("Article");
-          $vue->generer(array('billet' => $billet, 'commentaires' => $commentaires));
+          $view = new View("Article");
+          $view->generer(array('billet' => $billet, 'commentaires' => $commentaires));
       }
       else
         throw new Exception("Identifiant de billet non valide");
@@ -49,16 +49,16 @@ class ControleurArticle
                 );
                 $nouvelarticle = new Article($donnees);
                 $this->_article->add($nouvelarticle);
-                $vue = new ControleurAdmin;
-                $vue->admin();
+                $view = new ControleurAdmin;
+                $view->admin();
            }
            else
             throw new Exception("Titre ou contenu incorrect");
         }
         else
         {
-            $vue = new Vue("Nouvelarticle");
-            $vue->generer($test);
+            $view = new View("Nouvelarticle");
+            $view->generer($test);
         }
     }
 
@@ -78,8 +78,8 @@ class ControleurArticle
                     if ($dateCreation == $articleasupprimer->dateCreation())
                     {
                         $this->_article->delete($articleasupprimer);
-                        $vue = new ControleurAdmin;
-                        $vue->admin();
+                        $view = new ControleurAdmin;
+                        $view->admin();
                     }
                     else
                         throw new Exception("Cet article n'est pas à supprimer");
@@ -102,8 +102,8 @@ class ControleurArticle
             $idArticle = intval($_GET['id']);
             $dateCreation = $_GET['dateCreation'];
             $article= $this->_article->get($idArticle);
-            $vue = new Vue("Editarticle");
-            $vue->generer(array('article' => $article));
+            $view = new View("Editarticle");
+            $view->generer(array('article' => $article));
         }
         else if (!empty($_POST['titre']) AND !empty($_POST['contenu']) AND isset($_POST['id']))
         {
@@ -118,8 +118,8 @@ class ControleurArticle
             );
             $articleupdate = new Article($donnees);
             $this->_article->update($articleupdate);
-            $vue = new ControleurAdmin;
-            $vue->admin();
+            $view = new ControleurAdmin;
+            $view->admin();
         }
         else
             throw new Exception("Identifiant article invalide");

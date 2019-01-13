@@ -20,7 +20,7 @@
   <?php }  ?>
 <?php endforeach; ?>
 <p>Ajouter un commentaire</p>
-<form class="col-lg-6" action="index.php?action=commenter" method="post">
+<form class="col-lg-10" action="index.php?action=commenter" method="post">
   <p>Nom :
     <input type="text" class="form-control" name="auteur">
     <input type="hidden" value="<?=$billet->id(); ?>" name="id_article">

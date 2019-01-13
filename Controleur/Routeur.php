@@ -67,7 +67,7 @@ class Routeur
           }
           catch (Exception $e) {
               $msgErreur = $e->getMessage();
-              require 'Vue/vueErreur.php';
+              require 'view/viewErreur.php';
           }
     }
 
@@ -118,7 +118,7 @@ class Routeur
         }
         catch (Exception $e) {
             $msgErreur = $e->getMessage();
-            require 'Vue/vueErreur.php';
+            require 'view/viewErreur.php';
         }
     }
 }

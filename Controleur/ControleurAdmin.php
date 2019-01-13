@@ -16,7 +16,7 @@ class ControleurAdmin {
   public function admin() {
     $listebillet = $this->_article->getList();
     $listecoms = $this->_commentaire->getCommentaires_is_signal();
-    $vue = new Vue("Admin");
-    $vue->generer(array('listebillet' => $listebillet, 'listecoms' => $listecoms));
+    $view = new View("Admin");
+    $view->generer(array('listebillet' => $listebillet, 'listecoms' => $listecoms));
   }
 }

@@ -74,8 +74,8 @@ class ControleurCommentaire {
                     if ($auteur == $commentaireasupprimer->auteur())
                     {
                         $this->_commentaire->delete($commentaireasupprimer);
-                        $vue = new ControleurAdmin;
-                        $vue->admin();
+                        $view = new ControleurAdmin;
+                        $view->admin();
                     }
                     else
                         throw new Exception("Ce commentaire n'est pas à supprimer");
@@ -106,8 +106,8 @@ class ControleurCommentaire {
                     {
                         $commentaireamoder->setIs_signal(0);
                         $this->_commentaire->updatesignal($commentaireamoder);
-                        $vue = new ControleurAdmin;
-                        $vue->admin();
+                        $view = new ControleurAdmin;
+                        $view->admin();
                     }
                     else
                         throw new Exception("Ce commentaire n'est pas à modérer");

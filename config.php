@@ -10,8 +10,8 @@ class MyAutoload {
             else if (file_exists('Controleur/'.$classe.'.php')) {
                 require 'Controleur/'.$classe . '.php';
             }
-            else if (file_exists('Vue/'.$classe.'.php')) {
-                require 'Vue/'.$classe . '.php';
+            else if (file_exists('view/'.$classe.'.php')) {
+                require 'view/'.$classe . '.php';
             }
         }
         

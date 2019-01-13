@@ -10,14 +10,14 @@ class ControleurConnexion {
         if (isset($_SESSION['nom']) AND isset($_SESSION['is_admin']))
         {
             echo('connection espace sécurisé');
-            $vue = new ControleurAdmin;
-            $vue->admin();
+            $view = new ControleurAdmin;
+            $view->admin();
         }
         else
         {
             echo('connection KO');
-            $vue = new Vue("Connexion");
-            $vue->generer($test);
+            $view = new view("Connexion");
+            $view->generer($test);
         }
     }
 }

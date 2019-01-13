@@ -29,9 +29,15 @@
 	<script src="./carroussel.js" defer></script>
 	</head>
 	
-	<body>
-		<header>
+	<body>	
+			<ul id="nav">
+				  <li><a href="index.php">Home</a>
+				  <li><a href="article.php?id=1">Livre</a>
+				  <li><a href="biography.php">Biographie</a>
+				  <li><a href="index.php?action=connexion">Admin</a>
+		    </ul>
 		
+	<header>	
 			<div id="titre">
 			 <h1>Billet simple pour l'Alaska</h1>
 			  <h2 id="subtitle">Le livre en ligne, par Jean Forteroche</h2>
@@ -49,14 +55,9 @@
 <!-- FIN SLIDER -->
 			
 	
-				<ul id="nav">
-				  <li><a href="index.php">Home</a>
-				  <li><a href="article.php?id=1">Livre</a>
-				  <li><a href="biography.php">Biographie</a>
-				  <li><a href="index.php?action=connexion">Admin</a>
-				 </ul>
+
 			
-		
+<header>	
 
 <!-- <?php echo $_SERVER['REQUEST_URI'] ; ?>--> 
 <!-- Sert à afficher la requête dans la barre d'adresse -->

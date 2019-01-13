@@ -21,9 +21,9 @@ class ControleurAccueil {
     echo('controller Accueil loading <br/>');
     $billets = $this->_article->getList();
     echo('controller Accueil loading 1 <br/>');
-    $vue = new Vue("Accueil");
+    $view = new View("Accueil");
     echo('controller Accueil loading 2 <br/>');
-    $vue->generer(array('billets' => $billets));
+    $view->generer(array('billets' => $billets));
     echo('controller Accueil loading 3 <br/>');
   }
 
