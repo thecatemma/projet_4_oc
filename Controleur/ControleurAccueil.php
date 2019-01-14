@@ -17,6 +17,8 @@ class ControleurAccueil {
 
   // Affiche la liste de tous les billets du blog.
   // Pas d'entrée. En sortie, on génère la vue accueil avec un tableau $billets contenant les objets articles.
+	
+//les echos servent à débugger
   public function accueil() {
     echo('controller Accueil loading <br/>');
     $billets = $this->_article->getList();
@@ -26,6 +28,5 @@ class ControleurAccueil {
     $view->generer(array('billets' => $billets));
     echo('controller Accueil loading 3 <br/>');
   }
-
 
 }
