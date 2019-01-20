@@ -29,7 +29,7 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 	  
 	  
 <!-------- CSS ------->		
-	<link rel="stylesheet" type="text/css" href="./blog.css">
+	<link rel="stylesheet" type="text/css" href="./view/style/blog.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
 	<!--<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -41,7 +41,7 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="contenu/style.css" type="text/css">
+    <link rel="stylesheet" href="./view/style/style.css" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

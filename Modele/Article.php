@@ -1,6 +1,7 @@
 <?php
 
 // POPO article qui stockera les données relatives à un article
+//Les objets de ce projet sont les classes: articles, commentaires, utilisateur
 // Il se compose de getters (accesseurs) qui permettront l'accès aux attributs et de setters (mutateurs) qui permettront
 // de changer les valeurs des attributs.
 // L'hydratation de l'objet se fera via un array avec les données correspondantes aux attributs.
@@ -70,12 +71,8 @@ class Article
         return $this->_commentaires;
     }
 
-    public function setId($id)
-		
-		
-    {
+    public function setId($id)   {
      
-	  //
 	  //Setter --> injecte valeur dans BDD
 	  // Conversion de l'argument en nombre entier.
       // Si c'en était déjà un, rien ne changera.
