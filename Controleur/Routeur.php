@@ -14,7 +14,7 @@ class Routeur
     private $ctrlDeletearticle;
     private $ctrlDeletecom;
     private $ctrlOkcom;
-    /*private $ctrlInscription;
+    /*private $ctrlInscription))));
     private $ctrlContact;*/
 
     // Routage des requêtes à partir de la variable $_GET['action']
