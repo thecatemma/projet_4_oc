@@ -201,6 +201,13 @@ width: 50%;
 	font-size: 15px;
 }
 
+@media screen and (max-width: 655px)
+{
+	#carrousel ul li img {
+		display: none;
+	}
+}
+
 /*-------------SLIDER PRESENTATION------------*/
 
 #slide-accueil {width:1020%px;margin-bottom: 30px;}
