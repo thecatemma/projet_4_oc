@@ -29,13 +29,22 @@
 	<script src="./carroussel.js" defer></script>
 	</head>
 	
-	<body>	
+<body>
+
+	 <nav class="navigator">
+	  <div id="menuToggle">
+		    <input type="checkbox"/>
+				<span></span>
+			    <span></span>
+			    <span></span>	
 			<ul id="nav">
 				  <li><a href="index.php">Home</a>
 				  <li><a href="article.php?id=1">Livre</a>
 				  <li><a href="biography.php">Biographie</a>
 				  <li><a href="index.php?action=connexion">Admin</a>
 		    </ul>
+		 </div>
+	   </nav>
 		
 	<header>	
 			<div id="titre">
