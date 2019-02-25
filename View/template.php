@@ -63,7 +63,7 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 <!-----SLIDER----->
 			<div id="carrousel">
 				<ul>
-					<li><img src="./View/images/img1.jpg"/></li>
+					<li><img src="./view/images/img1.jpg"/></li>
 					<li><img src="./View/images/img2.jpg" /></li>
 					<li><img src="./View/images/img3.jpg" /></li>
 				</ul>

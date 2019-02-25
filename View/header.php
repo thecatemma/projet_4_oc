@@ -8,11 +8,11 @@
 	<meta name="description" content="Billet simple pour l\'Alaska">
 		
 <!-- CSS -->		
-	<link rel="stylesheet" type="text/css" href="./blog.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./blog.css">
 		
 <!-- Bootstrap
 	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
