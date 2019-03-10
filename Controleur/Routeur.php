@@ -1,5 +1,5 @@
 <?php
-// Routeur qui diriger les différentes requêtes aux controleurs correspondant.
+// Routeur qui dirige les différentes requêtes aux controleurs correspondants
 class Routeur
 {
     private $ctrlAccueil;
@@ -17,7 +17,7 @@ class Routeur
     /*private $ctrlInscription;
     private $ctrlContact;*/
 
-    // Routage des requêtes à partir de la variable $_GET['action']
+// Routage des requêtes à partir de la variable $_GET['action']
     public function routerRequete()
     {
         try {
@@ -29,6 +29,7 @@ class Routeur
                     $this->ctrlArticle = new ControleurArticle;
                     $this->ctrlArticle->controlArticle();
                     break;
+// Vérifie la valeur $getAction
                 case 'connexion' :
                     $this->ctrlConnexion = new ControleurConnexion;
                     $this->ctrlConnexion->connexion();
@@ -71,9 +72,9 @@ class Routeur
           }
     }
 
-    // Routage des requêtes à partir de la variable $_GET['action'] avec un test des variables stockées en session pour permettre
-    // l'identification de l'admin.
-    // Exception: l'action n'est pas valide
+// Routage des requêtes à partir de la variable $_GET['action'] avec un test des variables stockées en session pour permettre
+// l'identification de l'admin.
+// Exception: l'action n'est pas valide
     public function routerRequeteAdmin()
     {
         try{

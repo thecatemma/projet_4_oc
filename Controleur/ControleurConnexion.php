@@ -2,7 +2,7 @@
 // Controleur qui gère la connexion au back office
 class ControleurConnexion {
 
-    // Fonction qui renvoi la vue admin si ce dernier est loggé sinon renvoi la vue du formulaire de connexion.
+// Fonction qui renvoi la vue admin si ce dernier est loggé sinon renvoi la vue du formulaire de connexion.
     public function connexion() {
         $_SESSION['nom'] = 'admin';
         $_SESSION['is_admin'] = '1';
