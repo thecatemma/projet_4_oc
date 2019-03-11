@@ -35,7 +35,7 @@ class Routeur
                     $this->ctrlConnexion->connexion();
                     break;
                   case 'deconnexion' :
-                    $this->ctrlAccueil = new ControleurAccueil;
+                    $this->ctrlAccueil= = new ControleurAccueil;
                     $this->ctrlAccueil->deconnexion();
                     break;
                 case 'identification' :
@@ -70,6 +70,7 @@ class Routeur
               $msgErreur = $e->getMessage();
               require 'view/viewErreur.php';
           }
+// catch affiche message erreur et renvoie à la uE VviewErreur
     }
 
 // Routage des requêtes à partir de la variable $_GET['action'] avec un test des variables stockées en session pour permettre
