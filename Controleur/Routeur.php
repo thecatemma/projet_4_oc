@@ -84,6 +84,7 @@ class Routeur
                 if (isset($_GET['action']))
                 {
                     switch ($_GET['action'])
+//swith = série d'instructions if
                     {
                     case 'nouvelarticle' :
                         $this->ctrlNouvelarticle = new ControleurArticle;
