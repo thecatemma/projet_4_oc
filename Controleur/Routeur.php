@@ -80,6 +80,7 @@ class Routeur
     {
         try{
             if (isset($_SESSION['nom']) AND isset($_SESSION['is_admin']))
+//Isset détermine si une variable est définie et est différente de NULL.
             {
                 if (isset($_GET['action']))
                 {
