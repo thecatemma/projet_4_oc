@@ -35,7 +35,7 @@ class Routeur
                     $this->ctrlConnexion->connexion();
                     break;
                   case 'deconnexion' :
-                    $this->ctrlAccueil= = new ControleurAccueil;
+                    $this->ctrlAccueil= new ControleurAccueil;
                     $this->ctrlAccueil->deconnexion();
                     break;
                 case 'identification' :
