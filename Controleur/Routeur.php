@@ -31,7 +31,7 @@ class Routeur
                     break;
 // Vérifie la valeur $getAction
                 case 'connexion' :
-                    $this->ctrlConnexion = new ControleurConnexion;
+                    $this->ctrlConnexion = new ControllerConnexion;
                     $this->ctrlConnexion->connexion();
                     break;
                   case 'deconnexion' :
@@ -39,7 +39,7 @@ class Routeur
                     $this->ctrlAccueil->deconnexion();
                     break;
                 case 'identification' :
-                    $this->ctrlIdentification = new ControleurIdentification;
+                    $this->ctrlIdentification = new ControllerIdentification;
                     $this->ctrlIdentification->identification();
                     break;
                 /*case 'inscription' :
@@ -49,11 +49,11 @@ class Routeur
                     $this->ctrlContact->contact();
                     break;*/
                 case 'commenter' :
-                    $this->ctrlCommenter = new ControleurCommentaire;
+                    $this->ctrlCommenter = new ControllerCommentaire;
                     $this->ctrlCommenter->commenter();
                     break;
                 case 'signaler' :
-                    $this->ctrlSignal = new ControleurCommentaire;
+                    $this->ctrlSignal = new ControllerCommentaire;
                     $this->ctrlSignal->signal();
                     break;
                 default :
@@ -62,7 +62,7 @@ class Routeur
             }
             else {
                 echo('Controleur/Routeur l:63 > no action get from url -> go to index page<br/>');
-                $this->ctrlAccueil = new ControleurAccueil;
+                $this->ctrlAccueil = new ControllerAccueil;
                 $this->ctrlAccueil->accueil();
             }
           }
@@ -88,27 +88,27 @@ class Routeur
 //swith = série d'instructions if
                     {
                     case 'nouvelarticle' :
-                        $this->ctrlNouvelarticle = new ControleurArticle;
+                        $this->ctrlNouvelarticle = new ControllerArticle;
                         $this->ctrlNouvelarticle->nouvelarticle();
                         break;
                     case 'editarticle' :
-                        $this->ctrlEditarticle = new ControleurArticle;
+                        $this->ctrlEditarticle = new ControllerArticle;
                         $this->ctrlEditarticle->editarticle();
                         break;
                     case 'deletearticle' :
-                        $this->ctrlDeletearticle = new ControleurArticle;
+                        $this->ctrlDeletearticle = new ControllerArticle;
                         $this->ctrlDeletearticle->deletearticle();
                         break;
                     case 'deletecom' :
-                        $this->ctrlDeletecom = new ControleurCommentaire;
+                        $this->ctrlDeletecom = new ControllerCommentaire;
                         $this->ctrlDeletecom->deletecom();
                         break;
                     case 'okcom' :
-                        $this->ctrlOkcom = new ControleurCommentaire;
+                        $this->ctrlOkcom = new ControllerCommentaire;
                         $this->ctrlOkcom->okcom();
                         break;
                     default :
-                        $this->ctrlAccueil = new ControleurAccueil;
+                        $this->ctrlAccueil = new ControllerAccueil;
                         $this->ctrlAccueil->accueil();
                     }
                 }
@@ -116,7 +116,7 @@ class Routeur
                     throw new Exception("Action non valide");
             }
             else {
-                $this->ctrlAccueil = new ControleurAccueil;
+                $this->ctrlAccueil = new ControllerAccueil;
                 $this->ctrlAccueil->accueil();
             }
         }
