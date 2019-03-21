@@ -1,6 +1,6 @@
 <?php
 //Controleur qui gère la vue admin
-class ControleurAdmin {
+class ControllerAdmin {
 
   private $_article;
   private $_commentaire;

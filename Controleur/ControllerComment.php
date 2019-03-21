@@ -1,6 +1,6 @@
 <?php
 // Controleur qui gère les actions relatives aux commentaires
-class ControleurCommentaire {
+class ControllerComment {
     private $_commentaire;
 
     public function __construct() {
@@ -74,7 +74,7 @@ class ControleurCommentaire {
                     if ($auteur == $commentaireasupprimer->auteur())
                     {
                         $this->_commentaire->delete($commentaireasupprimer);
-                        $view = new ControleurAdmin;
+                        $view = new ControllerAdmin;
                         $view->admin();
                     }
                     else
@@ -106,7 +106,7 @@ class ControleurCommentaire {
                     {
                         $commentaireamoder->setIs_signal(0);
                         $this->_commentaire->updatesignal($commentaireamoder);
-                        $view = new ControleurAdmin;
+                        $view = new ControllerAdmin;
                         $view->admin();
                     }
                     else

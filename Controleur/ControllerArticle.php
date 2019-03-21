@@ -1,6 +1,6 @@
 <?php
 // Controleur qui gère les actions relatives aux articles
-class ControleurArticle
+class ControllerArticle
 {
     protected $_article;
 
@@ -49,7 +49,7 @@ class ControleurArticle
                 );
                 $nouvelarticle = new Article($donnees);
                 $this->_article->add($nouvelarticle);
-                $view = new ControleurAdmin;
+                $view = new ControllerAdmin;
                 $view->admin();
            }
            else
@@ -78,7 +78,7 @@ class ControleurArticle
                     if ($dateCreation == $articleasupprimer->dateCreation())
                     {
                         $this->_article->delete($articleasupprimer);
-                        $view = new ControleurAdmin;
+                        $view = new ControllerAdmin;
                         $view->admin();
                     }
                     else
@@ -118,7 +118,7 @@ class ControleurArticle
             );
             $articleupdate = new Article($donnees);
             $this->_article->update($articleupdate);
-            $view = new ControleurAdmin;
+            $view = new ControllerAdmin;
             $view->admin();
         }
         else

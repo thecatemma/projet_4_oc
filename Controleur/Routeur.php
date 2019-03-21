@@ -26,7 +26,7 @@ class Routeur
               switch ($_GET['action'])
               {
                 case 'article' :
-                    $this->ctrlArticle = new ControleurArticle;
+                    $this->ctrlArticle = new ControllerArticle;
                     $this->ctrlArticle->controlArticle();
                     break;
 // Vérifie la valeur $getAction

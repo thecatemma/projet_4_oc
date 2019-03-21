@@ -1,13 +1,13 @@
 <?php
 // Controleur qui gère l'identification de l'admin
-class ControleurIdentification {
+class ControllerIdentification {
     
     private $_utilisateur;
     private $_connexion;
 
     public function __construct() {
         $this->_utilisateur = new UtilisateurManager;
-        $this->_connexion = new ControleurConnexion;
+        $this->_connexion = new ControllerConnexion;
     }
 
 
