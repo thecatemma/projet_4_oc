@@ -59,7 +59,6 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 			  <h2 id="subtitle">Le livre en ligne, par Jean Forteroche</h2>
 			</div>	
 			
-
 <!-----SLIDER----->
 			<div id="carrousel">
 				<ul>
