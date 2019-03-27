@@ -53,6 +53,7 @@ class View {
     }
     else {
       throw new Exception("Fichier '$fichier' introuvable");
+//à chercher
     }
   }
 }
