@@ -6,6 +6,8 @@
 //accès aux éléments privés est uniquement réservé à la classe qui les a définie
 //http://php.net/manual/fr/language.oop5.visibility.php?fbclid=IwAR3NbLa_Ae4ATjD662LsR1ueJkHKMMFgLxj0HXz1F4rJVpOKsK90n8jpnsQ
 
+// une class sert à construire un objet
+
 class View {
 
 // Nom du fichier associé à la vue
@@ -14,18 +16,22 @@ class View {
   private $titre;
 
   public function __construct($action) {
+// les 2 tirets se mettent toujours devant le constructeur
+//class appelée quand on appelle l'objet, qu'est-ce que ça fait ?
+//le constructeur méthode par défaut quand la class et appelée
 // Détermination du nom du fichier vue à partir de l'action
     $this->fichier = "view/view" . $action . ".php";
+//ça instancie, la prend la ce fichier est égal à view view .php
   }
 
- // Génère et affiche la vue
+// Génère et affiche la vue
   public function generer($donnees) {
     // Génération de la partie spécifique de la vue
     $contenu = $this->genererFichier($this->fichier, $donnees);
  // Génération du gabarit commun utilisant la partie spécifique
     $view = $this->genererFichier('view/template.php',
       array('titre' => $this->titre, 'contenu' => $contenu));
-    // Renvoi de la view au navigateur
+// Renvoi de la view au navigateur
     echo $view;
   }
 
