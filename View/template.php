@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<!--Template inclu dans chaque vue qui regroupe les éléments html commun à toutes les pages
-On inclut ici le css et les script WYSIWYG tinymce -->
+<!--Template inclu dans chaque vue qui regroupe les éléments html commun à toutes les pages - Le css et les script WYSIWYG tinymce sont inclus ici -->
 <html>
 
   <head>
 <!------- Charset------->
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $title?></title>
@@ -38,8 +36,7 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 <!-- Bootstrap  -->
 	<!--<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/bootstrap-theme.min.css" />-->
-
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./view/style/style.css" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -69,17 +66,19 @@ On inclut ici le css et les script WYSIWYG tinymce -->
 			</div>
 <!-----FIN SLIDER----->
 			
-				<ul id="nav">
-				  <li><a href="index.php">Home</a></li>
-				  <li><a href="article.php?id=1">Livre</a></li>
-				  <li><a href="biography.php">Biographie</a></li>
-				  <li><a href="index.php?action=connexion">Admin</a></li>
-<!-- <li><a class="lien-header" href="<?="./index.php?action=contact" ?>">Contact</a></li>-->
+			<ul id="nav">
+		      <li><a href="index.php">Home</a></li>
+			  <li><a href="article.php?id=1">Livre</a></li>
+			  <li><a href="biography.php">Biographie</a></li>
+			  <li><a href="index.php?action=connexion">Admin</a></li>
+
+				<!-- <li><a class="lien-header" href="<?="./index.php?action=contact" ?>">Contact</a></li>-->
+					
                 <?php if (isset($_SESSION['nom']) AND isset($_SESSION['is_admin']))
                 { ?>
                 <li><a class="lien-header" href="<?="./index.php?action=deconnexion" ?>">Déconnexion</a></li>
                 <?php  } ?>
-				 </ul>
+			</ul>
 			
 		
 <!-- <?php echo $_SERVER['REQUEST_URI'] ; ?>-->
