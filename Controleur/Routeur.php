@@ -96,6 +96,7 @@ class Routeur
                         $this->ctrlEditarticle = new ControllerArticle;
                         $this->ctrlEditarticle->editarticle();
                         break;
+//L'instruction break permet de sortir d'une structure for, foreach, while, do-while ou switch
                     case 'deletearticle' :
                         $this->ctrlDeletearticle = new ControllerArticle;
                         $this->ctrlDeletearticle->deletearticle();
