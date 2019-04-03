@@ -109,6 +109,7 @@ class Routeur
                         $this->ctrlOkcom = new ControllerCommentaire;
                         $this->ctrlOkcom->okcom();
                         break;
+//ok com, à voir
                     default :
                         $this->ctrlAccueil = new ControllerAccueil;
                         $this->ctrlAccueil->accueil();
