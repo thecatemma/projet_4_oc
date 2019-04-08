@@ -117,6 +117,7 @@ class Routeur
                 }
                 else
                     throw new Exception("Action non valide");
+// Une exception peut être lancée ("throw") et attrapée ("catch") dans PHP. Le code devra être entouré d'un bloc try pour faciliter la saisie d'une exception potentielle. Chaque try doit avoir au moins un bloc catch ou finally correspondant.
             }
             else {
                 $this->ctrlAccueil = new ControllerAccueil;
