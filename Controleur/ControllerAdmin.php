@@ -1,11 +1,12 @@
 <?php
 //Controleur qui gère la vue admin
-class ControllerAdmin {
-
+class ControllerAdmin 
+{
   private $_article;
   private $_commentaire;
-
+//déclarer des attributs
   public function __construct() {
+//méthodes en général pas besoin d'être masquées à l'utilisateur -> public
     $this->_article = new ArticleManager();
     $this->_commentaire = new CommentaireManager();
   }
