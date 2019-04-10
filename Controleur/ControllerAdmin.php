@@ -21,3 +21,8 @@ class ControllerAdmin
     $view->generer(array('listebillet' => $listebillet, 'listecoms' => $listecoms));
   }
 }
+
+//Une classe, c'est un ensemble de variables et de fonctions (attributs et méthodes).
+//Un objet, c'est une instance de la classe pour pouvoir l'utiliser.
+//Tous vos attributs doivent être privés. Pour les méthodes, peu importe leur visibilité. C'est ce qu'on appelle le principe d'encapsulation.
+//On déclare une classe avec le mot-cléclasssuivi du nom de la classe, et enfin deux accolades ouvrantes et fermantes qui encercleront la liste des attributs et méthodes.

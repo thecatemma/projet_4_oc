@@ -2,6 +2,7 @@
 // Classe autoload qui va chercher dans les différents dossiers les classes à instancier et les met dans la pile autoload
 class MyAutoload {
     public static function autoload() {
+//méthodes: pas besoin d'être masquées à l'utilisateur
         function chargerClasse($classe)
         {
             if (file_exists('Modele/'.$classe.'.php')) {
