@@ -3,16 +3,16 @@
 class ControllerArticle
 {
     protected $_article;
-
+//L'accès aux éléments protégés est limité à la classe elle-même, ainsi qu'aux classes qui en héritent et parente.
     public function __construct() {
         echo('ok');
         $this->_article = new ArticleManager;
     }
 
-    // Affiche les détails d'un article. On récupère en entrée l'id de l'article dont on veut le détail.
-    // En sortie on affiche, les détails de l'article ainsi que ses commentaires avec deux tableaux contenant les objs articles et
-    // commentaires.
-    // Deux exceptions, un id non défini ou un id non valide.
+// Affiche les détails d'un article. On récupère en entrée l'id de l'article dont on veut le détail.
+// En sortie on affiche, les détails de l'article ainsi que ses commentaires avec deux tableaux contenant les objs articles et
+// commentaires.
+// Deux exceptions, un id non défini ou un id non valide.
     public function controlArticle() {
     if (isset($_GET['id']))
     {
@@ -31,10 +31,10 @@ class ControllerArticle
       throw new Exception("Identifiant de billet non défini");
     }
 
-    // Ajoute un nouvel article en bdd à partir d'un objet article créé avec les entrées du formulaire en backoffice.
-    // Si le formulaire est vide, on le réaffiche.
-    // En sortie on ajoute à la bdd article le nouvel article puis on affiche la vue admin.
-    // Une exception concernant le contenu incorrect.
+// Ajoute un nouvel article en bdd à partir d'un objet article créé avec les entrées du formulaire en backoffice.
+// Si le formulaire est vide, on le réaffiche.
+// En sortie on ajoute à la bdd article le nouvel article puis on affiche la vue admin.
+// Une exception concernant le contenu incorrect.
     public function nouvelarticle() {
         if (!empty($_POST['titre']) OR !empty($_POST['contenu']))
         {
@@ -62,11 +62,11 @@ class ControllerArticle
         }
     }
 
-    // Supprime un article de la bdd à partir d'un objet article créé avec son id et sa date de création.
-    // On compare les données reçues aux données en bdd pour s'assurer que l'article est le bon.
-    // En sortie on supprime l'article en bdd puis on affiche la vue admin.
-    // Trois exceptions. L'id et la date de création reçues ne correspondent pas en bdd, l'article n'est pas à supprimer,
-    // l'article n'existe pas ou son identifiant est incorrect.
+// Supprime un article de la bdd à partir d'un objet article créé avec son id et sa date de création.
+// On compare les données reçues aux données en bdd pour s'assurer que l'article est le bon.
+// En sortie on supprime l'article en bdd puis on affiche la vue admin.
+// Trois exceptions. L'id et la date de création reçues ne correspondent pas en bdd, l'article n'est pas à supprimer,
+// l'article n'existe pas ou son identifiant est incorrect.
     public function deletearticle() {
             if (isset($_GET['id']))
             {
@@ -89,13 +89,14 @@ class ControllerArticle
             }
             else
                 throw new Exception("Identifiant de l'article non défini");
-
+//PHP a une gestion des exceptions similaire à ce qu'offrent les autres langages de programmation. Une exception peut être lancée ("throw") et attrapée ("catch") dans PHP.
+		
     }
-
-    // Edite un article de la bdd à partir d'un objet article créé avec son id et sa date de création.
-    // On remplit les champs titre et contenu du formulaire (récupérés en bdd) à partir de l'id et la date de création de l'article
-    // On affiche récupère les données en $_POST puis on update la bdd.
-    // Une exception est lancée si l'id de l'article n'est pas valide.
+	
+ // Edite un article de la bdd à partir d'un objet article créé avec son id et sa date de création.
+ // On remplit les champs titre et contenu du formulaire (récupérés en bdd) à partir de l'id et la date de création de l'article
+ // On affiche récupère les données en $_POST puis on update la bdd.
+ // Une exception est lancée si l'id de l'article n'est pas valide.
     public function editarticle() {
         if ((isset($_GET['id'])) AND (isset($_GET['dateCreation'])))
         {
@@ -108,6 +109,7 @@ class ControllerArticle
         else if (!empty($_POST['titre']) AND !empty($_POST['contenu']) AND isset($_POST['id']))
         {
             $id = intval($_POST['id']);
+//intval — Retourne la valeur numérique entière équivalente d'une variable
             $titre = htmlspecialchars($_POST['titre']);
             $contenu = ($_POST['contenu']);
             $donnees = array(

@@ -7,6 +7,8 @@ class ControllerAdmin
 //déclarer des attributs
   public function __construct() {
 //méthodes en général pas besoin d'être masquées à l'utilisateur -> public
+//sert à construire l'objet. Si des attributs doivent être initialisés ou qu'une connexion à la BDD doit être faite, c'est ici que ça se passe. Comme dit plus haut, le constructeur est exécuté dès la création de l'objet et par conséquent, aucune valeur ne doit être retournée, même si ça ne génèrera aucune erreur.
+	  
     $this->_article = new ArticleManager();
     $this->_commentaire = new CommentaireManager();
   }
@@ -14,7 +16,8 @@ class ControllerAdmin
   // Affiche la liste de tous les billets du blog ainsi que la liste des commentaires signalés
   // Pas d'entrée. En sortie on génère la vue admin avec un tableau contenant les objets articles et un tableau contenant
   // les objets commentaires.
-  public function admin() {
+	public function admin() {
+//méthodes en général pas besoin d'être masquées à l'utilisateur -> public
     $listebillet = $this->_article->getList();
     $listecoms = $this->_commentaire->getCommentaires_is_signal();
     $view = new View("Admin");
