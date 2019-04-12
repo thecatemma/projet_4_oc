@@ -125,6 +125,7 @@ class ControllerArticle
         }
         else
             throw new Exception("Identifiant article invalide");
+//Une exception peut être lancée ("throw") et attrapée ("catch") dans PHP.
     }
 
 }
