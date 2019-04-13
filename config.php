@@ -19,3 +19,19 @@ class MyAutoload {
         spl_autoload_register('chargerClasse');
     }
 }
+
+//Pour rappel, un getter est une méthode chargée de renvoyer la valeur d'un attribut, tandis qu'un setter est une méthode chargée d'assigner une valeur à un attribut en vérifiant son intégrité (si vous assignez la valeur sans aucun contrôle, vous perdez tout l'intérêt qu'apporte le principe d'encapsulation).
+
+//Pour construire nos setters, il faut donc nous pencher sur les valeurs possibles de chaque attribut :
+
+//les valeurs possibles de l'identifiant sont tous les nombres entiers strictement positifs ;
+
+//les valeurs possibles pour le nom du personnage sont toutes les chaînes de caractères ;
+
+//les valeurs possibles pour la force du personnage sont tous les nombres entiers allant de 1 à 100 ;
+
+//les valeurs possibles pour les dégâts du personnage sont tous les nombres entiers allant de 0 à 100 ;
+
+//les valeurs possibles pour le niveau du personnage sont tous les nombres entiers allant de 1 à 100 ;
+
+//les valeurs possibles pour l'expérience du personnage sont tous les nombres entiers allant de 1 à 100.
