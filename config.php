@@ -35,3 +35,6 @@ class MyAutoload {
 //les valeurs possibles pour le niveau du personnage sont tous les nombres entiers allant de 1 à 100 ;
 
 //les valeurs possibles pour l'expérience du personnage sont tous les nombres entiers allant de 1 à 100.
+
+//14/04/2019
+//Lecture cours PDO + appronfondissement des getters et des setters et hydratation + objets pour appeler BDD + objets managers sachant que les managers peuvent aller dans des fichiers xml ou autre
