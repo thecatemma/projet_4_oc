@@ -21,20 +21,16 @@ class MyAutoload {
 }
 
 //Pour rappel, un getter est une méthode chargée de renvoyer la valeur d'un attribut, tandis qu'un setter est une méthode chargée d'assigner une valeur à un attribut en vérifiant son intégrité (si vous assignez la valeur sans aucun contrôle, vous perdez tout l'intérêt qu'apporte le principe d'encapsulation).
-
 //Pour construire nos setters, il faut donc nous pencher sur les valeurs possibles de chaque attribut :
-
 //les valeurs possibles de l'identifiant sont tous les nombres entiers strictement positifs ;
-
 //les valeurs possibles pour le nom du personnage sont toutes les chaînes de caractères ;
-
 //les valeurs possibles pour la force du personnage sont tous les nombres entiers allant de 1 à 100 ;
-
 //les valeurs possibles pour les dégâts du personnage sont tous les nombres entiers allant de 0 à 100 ;
-
 //les valeurs possibles pour le niveau du personnage sont tous les nombres entiers allant de 1 à 100 ;
-
 //les valeurs possibles pour l'expérience du personnage sont tous les nombres entiers allant de 1 à 100.
 
 //14/04/2019
 //Lecture cours PDO + appronfondissement des getters et des setters et hydratation + objets pour appeler BDD + objets managers sachant que les managers peuvent aller dans des fichiers xml ou autre
+
+//+notions d'héritage: lorsqu'une classe B hérite de la classe A
+//Héritage: c'est-à-dire faire en sorte qu'une classe hérite des attributs et méthodes d'une autre classe, avec le mot-clé extends.
