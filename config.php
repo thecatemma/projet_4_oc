@@ -34,3 +34,5 @@ class MyAutoload {
 
 //+notions d'héritage: lorsqu'une classe B hérite de la classe A
 //Héritage: c'est-à-dire faire en sorte qu'une classe hérite des attributs et méthodes d'une autre classe, avec le mot-clé extends.
+
+//16/04 Introduction à la résolution statique
