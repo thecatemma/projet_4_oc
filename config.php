@@ -37,4 +37,4 @@ class MyAutoload {
 
 //Partie redéfinir les méthodes
 
-//16/04 Introduction à la résolution statique
+//16/04 Introduction à la résolution statique <:::
