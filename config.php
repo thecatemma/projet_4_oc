@@ -40,3 +40,7 @@ class MyAutoload {
 //16/04 Introduction à la résolution statique <:::
 
 //Méthodes abstraites
+
+//Essayer de comprendre les statiques
+
+//poursuite du cours "concevez votre site avec PHP et MySQL"
