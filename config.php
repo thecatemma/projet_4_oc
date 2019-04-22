@@ -44,3 +44,5 @@ class MyAutoload {
 //Essayer de comprendre les statiques
 
 //poursuite du cours "concevez votre site avec PHP et MySQL"
+
+//chapitre héritage terminé à relire
