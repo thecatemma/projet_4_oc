@@ -46,3 +46,5 @@ class MyAutoload {
 //poursuite du cours "concevez votre site avec PHP et MySQL"
 
 //chapitre héritage terminé à relire
+
+//les méthodes magiques
