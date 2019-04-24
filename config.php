@@ -48,3 +48,5 @@ class MyAutoload {
 //chapitre héritage terminé à relire
 
 //les méthodes magiques
+
+//a méthode__constructest magique !
