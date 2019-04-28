@@ -10,12 +10,11 @@ $articles = getArticles();
 
 include 'header.php';
 ?>
-		
-		<div class="container">
+ <div class="container">
 			
 			<?php foreach($articles as $article): ?> 
 				
-				<!-- pour chacun des articles en base on duplique ce bloc -->
+<!-- pour chacun des articles en base on duplique ce bloc -->
 			
 				<div class="bloc">
 					<?php /*  print_r($article); */ ?>
@@ -25,11 +24,7 @@ include 'header.php';
 					<br/><br/>_______ <br/>
 				</div>
 			<?php endforeach; ?>
-			
-			
-		</div>
+ </div>
 
-
-	</body>
-
+</body>
 </html>

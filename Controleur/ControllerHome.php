@@ -1,6 +1,6 @@
 <?php
 //Controleur qui gère la vue accueil
-class ControllerAccueil {
+class ControllerHome {
 
   private $_article;
 

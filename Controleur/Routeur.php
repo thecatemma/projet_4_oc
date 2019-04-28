@@ -61,8 +61,8 @@ class Routeur
               }
             }
             else {
-                echo('Controleur/Routeur l:63 > no action get from url -> go to index page<br/>');
-                $this->ctrlAccueil = new ControllerAccueil;
+                echo('Controller/Routeur l:63 > no action get from url -> go to index page<br/>');
+                $this->ctrlAccueil = new ControllerHome;
                 $this->ctrlAccueil->accueil();
             }
           }
@@ -96,7 +96,6 @@ class Routeur
                         $this->ctrlEditarticle = new ControllerArticle;
                         $this->ctrlEditarticle->editarticle();
                         break;
-//L'instruction break permet de sortir d'une structure for, foreach, while, do-while ou switch
                     case 'deletearticle' :
                         $this->ctrlDeletearticle = new ControllerArticle;
                         $this->ctrlDeletearticle->deletearticle();
@@ -109,7 +108,7 @@ class Routeur
                         $this->ctrlOkcom = new ControllerCommentaire;
                         $this->ctrlOkcom->okcom();
                         break;
-//ok com, à voir
+
                     default :
                         $this->ctrlAccueil = new ControllerAccueil;
                         $this->ctrlAccueil->accueil();

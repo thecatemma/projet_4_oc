@@ -25,9 +25,6 @@ class MyAutoload {
 //les valeurs possibles de l'identifiant sont tous les nombres entiers strictement positifs ;
 //les valeurs possibles pour le nom du personnage sont toutes les chaînes de caractères ;
 //les valeurs possibles pour la force du personnage sont tous les nombres entiers allant de 1 à 100 ;
-//les valeurs possibles pour les dégâts du personnage sont tous les nombres entiers allant de 0 à 100 ;
-//les valeurs possibles pour le niveau du personnage sont tous les nombres entiers allant de 1 à 100 ;
-//les valeurs possibles pour l'expérience du personnage sont tous les nombres entiers allant de 1 à 100.
 
 //14/04/2019
 //Lecture cours PDO + appronfondissement des getters et des setters et hydratation + objets pour appeler BDD + objets managers sachant que les managers peuvent aller dans des fichiers xml ou autre
@@ -49,7 +46,7 @@ class MyAutoload {
 
 //les méthodes magiques
 
-//a méthode__constructest magique !
+//a méthode__construct est magique !
 
 //L’évènement qui appelle la méthode__constructest la création de l'objet.
 
