@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<!--Template inclu dans chaque vue qui regroupe les éléments html commun à toutes les pages - Le css et les script WYSIWYG tinymce sont inclus ici -->
+<!--Template inclu dans chaque vue qui regroupe les éléments html communs à toutes les pages - 
+Le css et les script WYSIWYG tinymce sont inclus ici -->
 <html>
 
   <head>

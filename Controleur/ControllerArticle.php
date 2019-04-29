@@ -10,8 +10,7 @@ class ControllerArticle
     }
 
 // Affiche les détails d'un article. On récupère en entrée l'id de l'article dont on veut le détail.
-// En sortie on affiche, les détails de l'article ainsi que ses commentaires avec deux tableaux contenant les objs articles et
-// commentaires.
+// En sortie on affiche, les détails de l'article ainsi que ses commentaires avec deux tableaux contenant les objs articles et commentaires.
 // Deux exceptions, un id non défini ou un id non valide.
     public function controlArticle() {
     if (isset($_GET['id']))
