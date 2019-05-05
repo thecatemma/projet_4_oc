@@ -46,7 +46,7 @@ class MyAutoload {
 
 //les méthodes magiques
 
-//a méthode__construct est magique !
+//méthode__construct est magique !
 
 //L’évènement qui appelle la méthode__constructest la création de l'objet.
 
